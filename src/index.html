@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Web paint</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="app.js" type="module"></script>
+  </head>
+
+  <body>
+    <header>
+      <form id="toolbar" class="toolbar">
+        <div class="tool">
+          <input
+            type="radio"
+            name="shape"
+            value="square"
+            id="square"
+            class="shape-input"
+            checked
+          />
+          <label for="square" class="shape square"></label>
+        </div>
+
+        <div class="tool">
+          <input
+            type="radio"
+            name="shape"
+            value="circle"
+            id="circle"
+            class="shape-input"
+          />
+          <label for="circle" class="shape circle"></label>
+        </div>
+
+        <div class="tool">
+          <label for="color">Color:</label>
+          <input
+            value="#7e22c9"
+            name="color"
+            type="color"
+            id="color"
+            class="color-input"
+          />
+        </div>
+
+        <div class="tool">
+          <label for="size">Size:</label>
+          <input
+            type="range"
+            id="size"
+            name="size"
+            min="1"
+            max="100"
+            value="50"
+            class="range-input"
+          />
+        </div>
+      </form>
+    </header>
+    <main class="main">
+      <div class="tools-menu"></div>
+      <div class="canvas-wrapper">
+        <canvas id="canvas" class="canvas"></canvas>
+      </div>
+    </main>
+  </body>
+</html>
