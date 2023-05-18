@@ -11,6 +11,12 @@
   <body>
     <header>
       <form id="toolbar" class="toolbar">
+        <input type="text" id="text-input" placeholder="Enter text...">
+        <div class="tool">
+          <input type="radio" name="shape" value="text" id="text" class="shape-input">
+          <label for="text" class="shape text"></label>
+        </div>
+
         <div class="tool">
           <input type="radio" name="shape" value="square" id="square" class="shape-input" checked="">
           <label for="square" class="shape square"></label>
@@ -19,6 +25,10 @@
         <div class="tool">
           <input type="radio" name="shape" value="circle" id="circle" class="shape-input">
           <label for="circle" class="shape circle"></label>
+        </div>
+        <div class="tool">
+          <input type="radio" name="shape" value="triangle" id="triangle" class="shape-input" checked="">
+          <label for="triangle" class="shape triangle"></label>
         </div>
 
         <div class="tool">
@@ -31,6 +41,8 @@
           <input type="range" id="size" name="size" min="1" max="100" value="50" class="range-input">
         </div>
       </form>
+      <button id="save-button">Save Image</button>
+      <!-- Кнопка сохранения -->
     </header>
     <main class="main">
       <div class="tools-menu"></div>
